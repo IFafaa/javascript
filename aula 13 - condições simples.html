@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 13</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            font: normal 18pt Arial;
+            color: black;
+        }
+        .titulo{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Sistema de multas</h1>
+    <div>O limite da pista é de 80km/h
+    <p>Digite abaixo a velocidade registrada:</p>
+    </div>
+    Velocidade:<input type="number" name="vel" id="vel">km/h
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+   
+    <script>
+        //funçao que verifica a velocidade
+        function verificar()  {
+            var txtvelocidade = document.querySelector('input#vel')
+            var velocidade = Number(txtvelocidade.value)
+            var res = document.querySelector('div#res')
+            var limite = velocidade - 80
+            
+            res.innerHTML = `A velocidade é de ${velocidade}km/h`
+            //condição simples que multa caso a velocidade seja maior que 80km/h
+        if(velocidade > 80){
+            res.innerHTML += `<p>Limite de velocidade ultrapassado em <strong>${limite}km/h</strong></p>`
+            res.innerHTML += '<p><strong>Você foi multado!</strong></p>'
+        }}
+
+        /*
+            Condição simples que lê em HTML a velocidade do veículo, e depois verifica se a velocidade é maior que a permitida
+            Comandos HTML:
+            
+            
+        */
+    </script>
+</body>
+</html>

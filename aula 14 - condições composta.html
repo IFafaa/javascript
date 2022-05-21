@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 14</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+            background-color:cadetblue;
+        }
+        .titulo{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="titulo">Autenticador de nacionalidade</h2>
+    <h5>Digite em qual pais você mora:</h5>
+    <input type="text" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div class="res"></div>
+    
+    <script>
+        function verificar(){
+        var pais = document.querySelector('input#pais')
+        var res = document.querySelector('div.res')
+        if(pais.value == 'Brasil'){
+            res.innerHTML = '<strong>Você é brasileiro!</strong>'
+        }else
+            res.innerHTML = '<strong>Você não é brasileiro!</strong>'
+    }
+        
+    </script>
+</body>
+</html>

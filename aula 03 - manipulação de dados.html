@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 03</title>
+</head>
+<body>
+    <h1 class="title">Olá</h1> <!-- Comentário em HTML-->
+    <style>
+        .title{
+           text-align: center;    /* Comentário em CSS*/
+           color: red;
+        }
+    </style>
+    <script>
+        var numero_1 = prompt('Digite um número:')
+            var numero_2 = prompt('Digite outro numero')
+            //prompt da resposta como string
+            var soma = numero_1 + numero_2
+            alert('A soma desses dois número é '+ soma) // + com efeito de concatenteção
+            
+            var numero_3 = Number(prompt('Digite um número:')) //convertendo o prompt para number
+            var numero_4 = Number(prompt('Digite outro número:'))
+            //prompt da resposta como number
+            var soma_2 = numero_3 + numero_4
+            alert('A soma desses dois números é de:'+ soma_2)
+
+
+            /*
+                    Manipulação de dados
+                
+            Para converter dados/variáveis:
+
+            O comando prompt sempre define a variável como string
+            para fazer a conversão de string para número basta:
+            Number.ParseInt(n)
+            Number.ParseFloat(n)
+            Number()
+            e para fazer a conversão de número para string basta:
+            String(n)
+            n.toString()
+
+            //number + number - para adição
+            //string + string - para concatenação
+
+
+            */
+    </script>
+    
+</body>
+</html>

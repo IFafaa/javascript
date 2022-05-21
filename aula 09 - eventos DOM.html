@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 09</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        interaja...
+    </div>
+    <script>
+
+        var area = document.querySelector('div#area')
+        area.addEventListener('click',clicar)
+        area.addEventListener('enter',entrar)
+        area.addEventListener('mouseout',saiu)
+
+        function clicar() {
+            area.innerHTML = 'clicou'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerHTML = 'entrou'
+            area.style.background= 'blue'
+        }
+        function saiu(){
+            area.innerHTML = 'saiu'
+            area.style.background = 'orange'
+        }
+
+        /*
+                Eventos DOM
+        
+        Os eventos DOM são interações do cliente com o website, causando funções ao script do site:
+        Para adicionar um evento pelo JS:
+
+        var.addEventListener('event',varfunction)
+        area.addEventListener('click',clicar)
+
+        E para adicionar pelo HTML:
+        <div id="x" event="varfunction"> </div>
+        <div id="area" onclick="clicar()"
+
+        Para manipular esses eventos, é necessário abrir uma função no script:
+        O comando function funciona executando tudo que estara entre as {} assim que "interagido"
+        ex:
+        function.varfunction(){
+          xxxxxxxxxxxxxx
+          xxxxxxxxxxxxxx
+          xxxxxxxxxxxxxx
+        }
+        function clicar(){
+            area.innerHTML = 'clicou'
+            area.style.background = 'red'
+        }
+
+        */
+    </script>
+</body>
+</html>

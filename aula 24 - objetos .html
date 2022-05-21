@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>aula 24</title>
+ </head>
+ <body>
+     <script>
+        var amigo = {nome: 'José',      //criação de um objeto
+        sexo: 'M',
+        peso: 85.4,
+        engordar(p=0){      //função que engorda
+            console.log('Engordou')
+            this.peso += p
+        }}
+        console.log(`${amigo.nome} pesa ${amigo.peso}kg`)
+        amigo.engordar(2)   //engorda dois quilos
+
+         /*
+                    objetos
+
+        objetos são formas de guardar informações, funções, números, dentro de uma variável
+        para definir um objeto, é usado {}
+        
+        var amigo ={nome:'José',sexo:'Masculino',peso:'85.4',engordar(p){
+
+        }}
+
+        para "chamar" um objeto é usado por exemplo:
+
+        amigo.nome
+        amigo.sexo
+        amigo.peso
+        amigo.engordar()
+
+        
+         */
+     </script>
+ </body>
+ </html>

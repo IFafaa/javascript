@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 21</title>
+</head>
+<body>
+    <script>
+        function parimpar(n){
+            if(n%2==0){
+                return 'par!'
+            }else{
+                return 'impar!'
+            }
+        }
+        var resultado = parimpar(4)
+        console.log(res)        // == par
+
+        //////////////////////////////////
+
+        function soma(n1=0,n2=0){
+            return n1 + n2
+        }
+        console.log(soma(2,5))  // == 7
+
+        /////////////////////////////////////
+
+        var dobro = function(x){
+            return x*2
+        }
+        console.log(dobro(5))   // == 10
+
+
+        /*
+                        funções
+
+        são ações executadas assim que são chamadas ou em decorrência de algum evento.
+        uma função pode receber parâmetros e retornar um resultado.
+        ex:
+
+        function ação(parâmetros){
+            xxxxx
+            xxxxx
+            xxxxx
+            return res
+        }
+        ação(5)
+
+        retorna se o valor é impar ou par:
+
+        function ParOrImp(n){
+            if(n%2==0){
+                return 'par'
+            }else{
+                return 'impar'
+            }
+        }
+        var res = ParImp(11)     ---> == impar
+
+        retorna o dobro de um número:
+
+        var dobro = function(x){
+            return x*2
+        }
+
+        console.log(dobro(5))  ---> ==10
+        
+
+    
+
+        */
+    </script>
+</body>
+</html>

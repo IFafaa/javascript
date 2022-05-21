@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title>aula 06</title>
+    </head>
+    <body>
+        <script>
+            var salario = Number.parseFloat(prompt('Qual o valor do seu salário?')) //declarando variável
+            console.log('O seu salário é de:', salario.toFixed(2)) //coloquei o valor em duas casas decimais
+            console.log('O seu salário é de:', salario.toFixed(2).replace('.',',')) // coloquei o valor em duas casas decimais e troquei o '.' por umaa ','
+            console.log('O seu salário em Reais é de:', salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) //colocando o salário em valor monetário brasileiro
+            console.log('O seu salário em Dolar é de:', salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})) //colocando o salário em valor monetário estadunidense
+       /*
+                Formatação de números
+
+        Comandos para manipular números:
+        n.toFixed(x) - limita a quantidade de casas decimais 
+        n.replace('x','z') - troca valores dentro de uma string ou no caso de números
+        n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) - coloca o valor em formato monetário brasileiro (R$)
+        n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})) - coloca o valor em formato monetário estadunidense ($)
+      
+        */
+       </script>
+
+            
+    </body>
+</html>

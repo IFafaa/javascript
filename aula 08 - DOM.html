@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos de DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>exemplo aprendendo a usar <strong>DOM</strong> em JS.</p>
+    <div id="msg">clique em mim</div>
+    <div class="msg2">clica em mim caralho</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerHTML)
+        p1.style.color = 'blue'
+        var corpo = document.body
+        corpo.style.background = 'green'
+        var d = document.getElementById('msg')
+        d.style.background = 'pink'
+        d.innerText = 'estou aguardando...'
+
+        var f = document.querySelector('div#msg')
+        f.style.background = 'blue'
+
+        var msg2 = document.querySelector('div.msg2')
+        msg2.style.background = 'white'
+        
+
+
+        /* 
+                manipulando o DOM
+        
+        o DOM é uma forma de implementar o JS no HTML e ao CSS pela árvore DOM
+        
+        formas de acessar o CSS e o HTML:
+
+        getElementsByTagName('p')[0]
+        getElementById('p')
+        getElementsByName('p')[0]
+        getElementsByCLassName('p')[0]
+        querrySelector('p#msg')     # - ID    
+        querrySelector('p.msg')     . - class
+
+        formas de manipular o DOM pelas variáveis:
+        ex:
+        
+        var.style.background = 'color'
+        var.style.color = 'color'
+        var.innerText = 'string'
+        
+
+        */
+        
+    </script>
+</body>
+</html>    
+
